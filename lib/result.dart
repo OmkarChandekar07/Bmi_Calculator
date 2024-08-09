@@ -1,4 +1,5 @@
 import 'package:bmi_calculatotr_app/constant.dart';
+import 'package:bmi_calculatotr_app/input_page.dart';
 import 'package:bmi_calculatotr_app/reusable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -66,6 +67,9 @@ class result extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(bottom: 10),
                       child: GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context, MaterialPageRoute(builder: (context)=>InputPage())); 
+                        },
                         child: Container(
                         decoration: BoxDecoration(
                         color: botomContainerColor,
